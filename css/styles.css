@@ -1,0 +1,441 @@
+/*====================================Сброс стилей====================================*/
+h1, 
+h2, 
+h3, 
+h4, 
+p {
+        margin-top: 0;
+        margin-bottom: 0;
+}
+
+ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+}
+
+img {
+        display: block;
+}
+
+.list {
+        list-style: none;
+}
+
+.link {
+        text-decoration: none;
+}
+
+.section {
+        padding: 94px 0;
+}
+.container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+}
+
+/*====================================/Сброс стилей====================================*/
+
+/* палитра цветов */
+/* Основной цвет #757575 */
+/* Вторичный цвет #212121 */
+/* акцент #2196F3 */
+/* Основной цвет фона #ffffff */
+
+:root {
+        --main-text-color: #757575;
+        --title-text-color: #212121;
+        --accent-color :#2196F3;
+        --White: #ffffff;
+        --main-font-family: 'Roboto', sans-serif;
+}
+
+body {
+        width: 1600px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        background-color: #ffffff;
+        color: #757575;
+}
+
+/* ====================================HEADER==================================== */
+.header-page {
+        border-bottom: 1px solid #ECECEC;
+}
+.header-page-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+}
+
+.nav {
+        display: flex;
+        align-items: center;
+        
+}
+
+.logo {
+        align-items: center;
+        margin-top: 24px;
+        margin-right: 93px;
+        margin-bottom: 25px;
+
+        color: #000000;
+
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+}
+
+.activ:active {
+        color: var(--accent-color);
+}
+
+.web {
+        color: var(--accent-color);
+}
+
+.site-nav-item:not(:last-child) {
+        margin-right: 50px;
+}
+
+.site-nav {
+        color: var(--title-text-color);
+        
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        
+}
+
+.site-nav:hover,
+.site-nav:focus {
+        color: var(--accent-color) ;
+}
+
+.contact-nav-item:not(:last-child) {
+        margin-right: 50px;
+}
+
+.contact-nav {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-text-color);
+}
+
+.contact-nav:hover,
+.contact-nav:focus {
+        color: var(--accent-color);
+}
+
+/* ====================================/HEADER==================================== */
+
+/* ====================================HERO==================================== */
+
+.hero {
+        display: flex;
+        justify-content: center;
+        background-color: #2F303A;
+        min-height: 600px;
+        padding: 0;
+}
+
+.hero-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.hero-title {
+        margin-bottom: 30px;
+        max-width: 696px;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--White);
+}
+
+/* ====================================/HERO==================================== */
+
+/* ====================================BUTTONS==================================== */
+
+.hero-button {
+        padding: 10px 32px;
+        border-radius: 4px;
+        border: transparent;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        background-color: var(--accent-color);
+        color: var(--White);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+        background-color: #188CE8;
+        color: var(--White);
+}
+
+.button {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        text-align: center;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        background-color: #F5F4FA;
+        color: var(--title-text-color);
+}
+
+.button:hover,
+.button:focus {
+        background-color: var(--accent-color);
+        color: var(--White);
+}
+/* ====================================/BUTTONS==================================== */
+
+/* ====================================FEATURES==================================== */
+
+.features-list {
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+}
+
+.features-item {
+        display: flex;
+        flex-direction: column;
+        flex-basis: calc((100% - 90px) / 4);
+}
+
+.section .section-title {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+}
+.section .section-text {
+        /* width: 270px; */
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+}
+
+/* ====================================/FEATURES==================================== */
+
+/* ====================================WORK==================================== */
+.work {
+        padding-top: 0;
+}
+
+.work-title {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+}
+
+.work-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+}
+.work-list-card {
+        flex-basis: calc((100% - 60px) / 3);
+}
+
+/* ====================================/WORK==================================== */
+
+/* ====================================TEAM==================================== */
+.team-fon {
+        background-color: #F5F4FA;
+}
+
+.team-title {
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+}
+.team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+}
+
+.team-card {
+        flex-basis: calc((100% - 90px) / 4);
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+
+.team-name {
+        padding-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+}
+.team-text {
+        padding-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-text-color);
+}
+/* ====================================/TEAM==================================== */
+
+/* ====================================FOOTER==================================== */
+.footer {
+        background-color: #2F303A;
+}
+.footer-section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 60px;
+}
+
+.footer .logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--White) ;
+        margin: 0;
+        margin-bottom: 20px;
+}
+.footer-logo {
+        margin-bottom: 20px;
+}
+.footer-web {
+        color: var(--accent-color);
+}
+
+.footer-list:not(:last-child) {
+        margin-bottom: 9px;
+}
+
+.footer-link {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--White);
+}
+.footer-contact {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+        color: var(--accent-color);
+}
+/* ====================================/FOOTER==================================== */
+
+/* ====================================PORTFOLIO==================================== */
+.portfolio {
+        display: flex;
+        flex-direction: column;
+}
+
+.menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 94px;
+        gap: 8px;
+}
+
+.portfolio-button {
+        padding: 6px 22px;
+        margin-bottom: 50px;
+        
+        border-radius: 4px;
+        border: transparent;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus{
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+0px 1px 2px rgba(0, 0, 0, 0.08),
+0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 94px;
+}
+.portfolio-list-card {
+        flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-card {
+        background: #FFFFFF;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        border-left: 1px solid #EEEEEE;
+        padding: 20px 24px 4px;
+}
+
+.portfolio-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: var(--title-text-color);
+}
+
+.portfolio-text {
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.03em;
+        color: var(--main-text-color);
+}
+/* ====================================/PORTFOLIO==================================== */
