@@ -55,7 +55,6 @@ img {
 }
 
 body {
-        width: 1600px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
         background-color: #ffffff;
@@ -76,14 +75,15 @@ body {
 .nav {
         display: flex;
         align-items: center;
-        
+}
+.header-logo {
+        padding-top: 24px;
+        padding-bottom: 25px;
 }
 
 .logo {
         align-items: center;
-        margin-top: 24px;
         margin-right: 93px;
-        margin-bottom: 25px;
 
         color: #000000;
 
@@ -92,6 +92,10 @@ body {
         font-size: 26px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+}
+.nav-list {
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 
 .activ:active {
@@ -136,6 +140,10 @@ body {
 .contact-nav:hover,
 .contact-nav:focus {
         color: var(--accent-color);
+}
+.nav-item {
+        padding-top: 32px;
+        padding-bottom: 32px;
 }
 
 /* ====================================/HEADER==================================== */
@@ -302,9 +310,12 @@ body {
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
 }
+.team-card-text {
+        padding-top: 30px;
+        padding-bottom: 30px;
+}
 
 .team-name {
-        padding-top: 30px;
         margin-bottom: 10px;
         font-weight: 500;
         font-size: 16px;
@@ -314,7 +325,6 @@ body {
         color: var(--title-text-color);
 }
 .team-text {
-        padding-bottom: 30px;
         font-size: 16px;
         line-height: 1.19;
         text-align: center;
@@ -326,12 +336,13 @@ body {
 /* ====================================FOOTER==================================== */
 .footer {
         background-color: #2F303A;
+        padding-top: 60px;
+        padding-bottom: 60px;
 }
 .footer-section {
         display: flex;
         flex-direction: column;
-        padding-top: 60px;
-        padding-bottom: 60px;
+        
 }
 
 .footer .logo {
@@ -379,6 +390,8 @@ body {
 .portfolio {
         display: flex;
         flex-direction: column;
+        padding-top: 94px;
+        padding-bottom: 94px;
 }
 
 .menu {
@@ -386,14 +399,14 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding-top: 94px;
+
         gap: 8px;
+        margin-bottom: 50px;
 }
 
 .portfolio-button {
         padding: 6px 22px;
-        margin-bottom: 50px;
-        
+
         border-radius: 4px;
         border: transparent;
 }
@@ -410,7 +423,6 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 30px;
-        margin-bottom: 94px;
 }
 .portfolio-list-card {
         flex-basis: calc((100% - 60px) / 3);
@@ -421,7 +433,7 @@ body {
         border-right: 1px solid #EEEEEE;
         border-bottom: 1px solid #EEEEEE;
         border-left: 1px solid #EEEEEE;
-        padding: 20px 24px 4px;
+        padding: 20px 24px;
 }
 
 .portfolio-title {
@@ -430,6 +442,7 @@ body {
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--title-text-color);
+        margin-bottom: 4px;
 }
 
 .portfolio-text {
